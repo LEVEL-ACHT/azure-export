@@ -3,7 +3,7 @@ The script automates the export of the Azure AD groups and sends them to a LEVEL
 Google SMTP server. Included in the CSV export is group ID, group name, email intern,
 Username and Email External
 
-# Implementierungsreihenfolge
+# Setup sequence
 1. [Install-PS-Modules.ps1](Install-PS-Modules.ps1): Install the required PowerShell modules
 2. [Save-Password.ps1](Save-Password.ps1): Securely store the password or application secret (if MFA is enabled) (more details below)
 3. [Export-ADUser.ps1](Export-ADUser.ps1): Initially configure script and then run it. Explanation of the configuration values: 
@@ -24,7 +24,7 @@ Username and Email External
     ```
 
 
-# Erklärung PowerShell Password Storage Script
+# Detailed explanation of the setup and the save password script
 This PowerShell script is designed to securely store a user’s password or an application secret (if MFA is enabled for this account) in a text file.
 
 **Important**: If MFA is enabled for the executing account, a password cannot be used to run the script automatically. Therefore, a connection with Azure PowerShell must be established via a service principal.[Link to Microsoft Documentation](https://learn.microsoft.com/en-us/powershell/azure/authenticate-noninteractive?view=azps-11.4.0)

@@ -12,7 +12,7 @@ if ($DIR -match '.+?\\$') {
 
 # Inform the user about the need to enter a password or application password
 Write-Host "Please refer to the README for instructions on how to generate an application password."
-Write-Host "Please enter the password or application password (if MFA is activated) for the user account:"
+Write-Host "Please enter the password or application secret (if MFA is activated) for the user account:"
 $password = Read-Host -AsSecureString
 
 # Check if the user has entered a password/ application secret
