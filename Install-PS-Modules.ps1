@@ -19,4 +19,3 @@ function CheckAndInstallModule {
 
 # Use the function to check and install the 'Az' and 'AzureAD' modules
 CheckAndInstallModule -ModuleName 'Az'
-CheckAndInstallModule -ModuleName 'AzureAD'
